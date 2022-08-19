@@ -1,0 +1,134 @@
+* {
+  transition: ease-in 0.2s;
+}
+body {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(#c020a5, #11b45b);
+  height: 100vh;
+  line-height: 1.8;
+}
+input {
+  border: none;
+  color: white;
+}
+::placeholder {
+  opacity: 1;
+  color: white;
+}
+.calculator {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  margin: auto;
+  height: 550px;
+  width: 400px;
+  background-color: #f4f4f4;
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.answer {
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  color: #f4f4f4;
+  grid-row: 1 / span 2;
+  text-align: right;
+  font-size: 58px;
+  bottom: 0;
+}
+.buttons {
+  justify-self: center;
+  margin: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-row: 3 / span 8;
+}
+button {
+  background-color: #f4f4f4;
+  font-size: 20px;
+  border: none;
+}
+button:hover {
+  background-color: #dad4d4;
+}
+button:active {
+  font-size: 30px;
+}
+.delete {
+  background-color: rgb(241, 88, 88);
+  color: #f4f4f4;
+}
+.enter {
+  background-color: #52b8e0;
+  color: #f4f4f4;
+  grid-row: 4 / span 5;
+  grid-column: 4;
+}
+.delete:hover {
+  background-color: #fa3333;
+}
+.enter:hover {
+  background-color: #6e8cdf;
+}
+.empty1 {
+  background-size: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: lightgray;
+}
+.empty1:hover {
+  background-size: 85%;
+  transition: ease-in 0s;
+}
+.decimal {
+  font-weight: 900;
+}
+
+/*   PLACING NUMBERS */
+
+.one {
+  grid-row: 2;
+}
+.two {
+  grid-row: 2;
+}
+.three {
+  grid-row: 2;
+}
+.four {
+  grid-row: 3;
+}
+.five {
+  grid-row: 3;
+}
+.six {
+  grid-row: 3;
+}
+.seven {
+  grid-row: 4;
+}
+.eight {
+  grid-row: 4;
+}
+.nine {
+  grid-row: 4;
+}
+.zero {
+  grid-row: 5;
+  grid-column: 2;
+}
+
+.deleteMemory {
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.numbers {
+  font-weight: 900;
+}

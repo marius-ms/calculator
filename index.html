@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fontAwesome/css/all.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="answer"></div>
+      <div class="buttons">
+        <button class="deleteMemory" onclick="deleteMemory()">C</button>
+        <button class="division" onclick="chooseOperator('/')">
+          <i class="fas fa-divide"></i>
+        </button>
+        <button class="multiply" onclick="chooseOperator('*')">
+          <i class="fas fa-times"></i>
+        </button>
+        <button class="delete" onclick="removeOne()">
+          <i class="fas fa-backspace"></i>
+        </button>
+        <button class="numbers zero" onclick="inputting(0)">0</button>
+        <button class="numbers one" onclick="inputting(1)">1</button>
+        <button class="numbers two" onclick="inputting(2)">2</button>
+        <button class="subtract" onclick="chooseOperator('-')">
+          <i class="fas fa-minus"></i>
+        </button>
+        <button class="numbers three" onclick="inputting(3)">3</button>
+        <button class="numbers four" onclick="inputting(4)">4</button>
+        <button class="numbers five" onclick="inputting(5)">5</button>
+        <button class="addition" onclick="chooseOperator('+')">
+          <i class="fas fa-plus"></i>
+        </button>
+        <button class="numbers six" onclick="inputting(6)">6</button>
+        <button class="numbers seven" onclick="inputting(7)">7</button>
+        <button class="numbers eight" onclick="inputting(8)">8</button>
+        <button class="enter" onclick="Eval()">
+          <i class="fas fa-equals"></i>
+        </button>
+        <button class="empty1" onclick=""></button>
+        <button class="numbers nine" onclick="inputting(9)">9</button>
+        <button class="decimal">.</button>
+      </div>
+    </div>
+  </body>
+  <script src="./script/main.js"></script>
+</html>
